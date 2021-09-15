@@ -8,13 +8,18 @@ const RecipeSchema = new Schema({
         required:[true, 'please add title'],
         maxlength: [50,'max 50 characteres allowed for firstname']
     },
-    url: {
-        type: String,
-      },
+    file:{
+
+        url: {
+            type: String,
+          },
+          fileName: {
+            type: String,
+          }
+    },
     
-      fileName: {
-        type: String,
-      },
+    
+     
     description:{
         type: String,
    
